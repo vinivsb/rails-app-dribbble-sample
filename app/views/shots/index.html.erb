@@ -1,0 +1,27 @@
+<div class="page-header spacing text-center">
+  <h1>Popular Shots</h1>
+  <p class="lead">The most popular shots of Dribbble. <a href="http://dribbble.com">Dribbble.com</a>.</p>
+</div>
+<div class="row shots-container">
+  <%  @shots["shots"].each do |shot|  %>
+    <div class="col-md-3 col-sm-6 shot">
+      <div class="panel panel-default">
+        <a href="/shots/<%= shot['id'] %>/details">
+          <div class="panel-heading">
+            <div data-src="<%= shot['image_teaser_url'] %>" class="image-from"></div>
+            <div class="placeholder teaser"></div>
+          </div>
+        </a>
+        <div class="panel-body">
+          <ul class="tools">
+            <li><span class="glyphicon glyphicon-heart"></span><%= shot['likes_count'] %></li>
+            <li><span class="glyphicon glyphicon-eye-open"></span><%= shot['views_count'] %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+<div class="row">
+  <%= render "pagination", :page => @shots['page'].to_i, :total_pages => @shots['pages'].to_i %>
+</div>

@@ -1,0 +1,15 @@
+<nav>
+  <ul class="pager">
+    <% if page == 1 %>
+      <li class="disabled"><a href="javascript:void(0);">Previous</a></li>
+    <% else %>
+      <li><a href="/shots/populars/?page=<%= page - 1 %>">Previous</a></li>
+    <% end %>
+
+    <% if page == total_pages %>
+      <li class="disabled"><a href="javascript:void(0);">Next</a></li>
+    <% else %>
+      <li><a href="/shots/populars/?page=<%= page + 1 %>">Next</a></li>
+    <% end %>
+  </ul>
+</nav>

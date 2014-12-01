@@ -1,0 +1,57 @@
+body {
+  background-color: #e0e0e0;
+}
+.container{ padding-top: 70px; }
+.page-header.spacing {
+  padding: 40px 15px;
+}
+.shot{
+  min-width: 200px;
+}
+.shot .panel-heading, .shot .panel-body{
+  padding: 0px;
+}
+.shot .panel-heading{
+  background-color: #fff;
+  background-image: none;
+  border: 0;
+}
+.shot .panel-default{
+  position: relative;
+}
+.shot .panel-body{
+  width: 100%;
+  position: absolute;
+  top: 122px;
+  font-size: 0.9em;
+}
+.shot .tools{
+  list-style: none;
+  background-color: rgba(0,0,0,0.7);
+  text-align: right;
+  padding: 5px 10px;
+}
+.shot .tools li{
+  display: inline-block;
+  color: #fff;
+  margin-left: 10px;
+}
+.shot .tools .glyphicon{
+  margin-right: 5px;
+}
+.shot .placeholder{
+  background-color: #999;
+  min-width: 200px;
+  min-height: 150px;
+}
+.shot .teaser{
+   margin: 0px auto;
+}
+
+.shot-details .list-unstyled li{
+  display: inline-block;
+}
+.shot-details .avatar{
+  max-width: 70px;
+  max-height: 70px;
+}

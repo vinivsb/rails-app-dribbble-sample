@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-6">
+    <div class="panel shot-details">
+      <div class="panel-heading text-center">
+        <img src="<%= @shot['image_400_url'] %>" class="img-responsive img-thumbnail">
+      </div>
+      <div class="panel-body">
+        <ul class="list-unstyled">
+          <li><img src="<%= @shot['player']['avatar_url'] %>" class="img-circle avatar"></li>
+          <li><p><strong><%= @shot["title"] %></strong><br/><small> by <%= @shot['player']['username'] %></small><p></li>
+        </ul>
+        <p><%= @shot['description'].html_safe %><p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-2">
+    <div class="panel">
+      <div class="panel-body">
+        <ul class="list-unstyled">
+          <li><span class="glyphicon glyphicon-eye-open"></span> <%= @shot['views_count'] %></li>
+          <li><span class="glyphicon glyphicon-heart"></span> <%= @shot['likes_count'] %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
