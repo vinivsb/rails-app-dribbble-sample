@@ -21,6 +21,8 @@ module Dribbble
     # config.i18n.default_locale = :de
 
     config.assets.paths << Rails.root.join('vendor', 'assets', 'bower')
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'bower', 'bootstrap', 'fonts')
+    
     config.autoload_paths += [config.root.join("app/presenters")]
 
     # We don't want the default of everything that isn't js or css, because it pulls too many things in
