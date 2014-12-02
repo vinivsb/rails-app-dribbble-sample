@@ -27,6 +27,8 @@ gem 'spring',        group: :development
 
 gem 'httparty'
 
+gem 'unicorn', group: :production
+
 group :development, :test do
   #gem 'debugger'
   gem 'dotenv-rails'
