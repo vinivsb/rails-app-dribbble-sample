@@ -27,7 +27,7 @@ gem 'spring',        group: :development
 
 gem 'httparty'
 
-gem 'unicorn', group: :production
+gem 'unicorn'
 
 group :development, :test do
   #gem 'debugger'
