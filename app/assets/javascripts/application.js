@@ -10,9 +10,9 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require verge/verge
-//= require bootstrap
+//= require jquery.min
+//= require verge.min
+//= require bootstrap.min
 //= require boot
 //= require myapplication
 //= require shots
